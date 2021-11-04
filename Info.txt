@@ -1,0 +1,26 @@
+paste lua script to Scripts folder
+
+-----------------
+Basic variables
+-----------------
+nextbet             (double)    next rate (changed)
+chance              (double)    chance of winning (changed)
+previousbet         (double)    previous bet (read only)
+balance             (double)    current balance (read only)
+currentprofit       (double)    profit rate (read only)
+wins                (int)       number of wins (read only)
+losses              (int)       number of losses (read only)
+Secret              (int)       drawn number after bet (read only)
+bethigh             (bool)      more true, less false (changed)
+win                 (bool)      winning bet true, losing bet false (read only)
+lastRain	    (int)	get last rain info
+
+----------------------
+Functions and methods
+----------------------
+stop()                               stopping the game process (Stop)
+sleep(miliseconds)		     delay in miliseconds
+dobet()                              method called by the program after the bet
+math.random(int min, int max)        random number
+resetseed()                          Resets Seed Client
+resetstats() 	                     Used to reset all statistics. Except for the graph, history and profit.
